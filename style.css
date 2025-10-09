@@ -225,3 +225,38 @@ img {
   flex: 1 1 200px; /* Each field takes equal width, min 200px */
 }
 
+.float-left {
+  float: left;
+  margin: 0 16px 16px 0; /* top, right, bottom, left */
+  width: 300px;
+}
+
+.float-right {
+  float: right;
+  margin: 0 0 16px 16px; 
+  width: 300px;
+}
+
+.float-left img,
+.float-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.float-left figcaption,
+.float-right figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  color: #3f403f;
+}
+
+/* Clear floats after article */
+article::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
