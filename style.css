@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e6e8e6;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #9fb8ad;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px dashed #ffd9da;
+}
+
+header h1 {
+    color: #ffd9da !important;
+    margin-bottom: 15px;
+    text-shadow: none;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd9da;
+    color: #000000;
+    border-radius: 8px;
+    border: 2px solid #ffd9da;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #9fb8ad;
+    color: #ffffff;
+    border-color: #ffd9da;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+}
+
+article, section, .about-content {
+    background-color: #ced0ce;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #000000 !important;
+}
+
+p, li, span, strong, em {
+    color: #000000 !important;
+}
+
+address {
+    color: #000000 !important;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #000000 !important;
+    border: 2px solid #000000;
+}
+
+table th, table td {
+    border: 2px solid #000000 !important;
+    padding: 10px;
+    text-align: left;
+    background-color: #ffffff;
+    color: #000000 !important;
+    font-weight: normal;
+}
+
+/* Form */
+form {
+    background-color: #9fb8ad;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form label,
+form input,
+form select,
+form textarea {
+    color: #000000 !important;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3f403f;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+form button,
+form input[type="submit"] {
+    background-color: #ffd9da !important;
+    color: #000000 !important;
+    border: 2px solid #ffd9da !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #9fb8ad;
+    color: #ffffff;
+    border-color: #ffd9da;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form button:focus,
+form input[type="submit"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Images */
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 217, 218, 0.3);
+}
+
+#contact-page, #home-page, #about-page {
+    padding: 20px;
+}
+
+#about-page {
+    background-color: #fefcfb;
+}
+
+/* About Page layout */
+.about-container {
+    display: flex;
+    flex-direction: column; /* stacked photo above text */
+    gap: 24px;
+    align-items: center;
+}
+
+.about-photo {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255,217,218,0.35);
+}
+
+.about-text {
+    text-align: center;
+}
+
+/* Article images */
+.article-photo {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+
+.article-figure figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 6px;
+    color: #3f403f;
+}
+
+#about-page ul,
+#about-page ul li {
+    list-style: none !important;  /* remove bullets */
+    padding: 0 !important;         /* remove default padding */
+    margin: 0 0 10px 0 !important; /* adjust spacing between items */
+}
+
+/* Multi-column form layout */
+.form-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Stacks on small screens */
+}
+
+.form-grid > div {
+  flex: 1 1 200px; /* Each field takes equal width, min 200px */
+}
+
