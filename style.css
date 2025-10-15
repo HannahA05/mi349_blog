@@ -209,25 +209,25 @@ img {
 
 #about-page ul,
 #about-page ul li {
-    list-style: none !important;  /* remove bullets */
-    padding: 0 !important;         /* remove default padding */
-    margin: 0 0 10px 0 !important; /* adjust spacing between items */
+    list-style: none !important;  
+    padding: 0 !important;         
+    margin: 0 0 10px 0 !important; 
 }
 
-/* Multi-column form layout */
+
 .form-grid {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* Stacks on small screens */
+  flex-wrap: wrap; 
 }
 
 .form-grid > div {
-  flex: 1 1 200px; /* Each field takes equal width, min 200px */
+  flex: 1 1 200px; 
 }
 
 .float-left {
   float: left;
-  margin: 0 16px 16px 0; /* top, right, bottom, left */
+  margin: 0 16px 16px 0; 
   width: 300px;
 }
 
@@ -252,11 +252,127 @@ img {
   color: #3f403f;
 }
 
-/* Clear floats after article */
+
 article::after {
   content: "";
   display: block;
   clear: both;
 }
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: nowrap;      
+  overflow-x: auto;       
+  white-space: nowrap;    
+}
+
+nav ul li {
+  flex: 0 0 auto;         
+}
+
+nav ul li a {
+  min-width: 100px;       
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+@media (max-width: 1024px) {
+
+  
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  
+  main {
+    padding: 15px;
+  }
+
+  article, section, .about-content {
+    padding: 15px;
+  }
+
+  
+  .article-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .float-left,
+  .float-right {
+    float: none;
+    margin: 0 auto 20px;
+    display: block;
+    width: 90%;
+  }
+
+  
+  .form-grid {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  
+  table, th, td {
+    font-size: 0.9rem;
+  }
+
+  
+  form {
+    padding: 15px;
+  }
+
+  
+  .article-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .float-left,
+  .float-right {
+    float: none;
+    margin: 0 auto 15px;
+    display: block;
+    width: 90%;
+  }
+
+  
+  .form-grid {
+    flex-direction: column;
+  }
+}
 
